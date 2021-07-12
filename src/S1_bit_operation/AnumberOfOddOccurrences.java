@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class AnumberOfOddOccurrences {
-
 	//在一个数组中，只有一个数字出现奇数次，其余都出现偶数次，找到他！
 	public static int findOddOccurrencesNumber(int[] arr) {
 
