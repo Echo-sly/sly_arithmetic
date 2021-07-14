@@ -1,5 +1,5 @@
 
-package S1_bit_operation;
+package Part1_BitOperation;
 
 import java.util.HashMap;
 import java.util.Iterator;
