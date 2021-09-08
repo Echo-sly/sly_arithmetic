@@ -48,7 +48,6 @@ public class BinaryTreeFunction {
     /**
      * 中序遍历二叉树
      *
-     * @param node
      */
     public static void inOrderTraveral(TreeNode node) {
         if (node == null) {
@@ -62,7 +61,6 @@ public class BinaryTreeFunction {
     /**
      * 后序遍历二叉树
      *
-     * @param node
      */
     public static void postOrderTraveral(TreeNode node) {
         if (node == null) {
