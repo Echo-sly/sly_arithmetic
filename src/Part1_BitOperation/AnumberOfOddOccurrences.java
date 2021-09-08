@@ -1,10 +1,12 @@
-
 package Part1_BitOperation;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * @author S
+ */
 public class AnumberOfOddOccurrences {
 	//在一个数组中，只有一个数字出现奇数次，其余都出现偶数次，找到他！
 	public static int findOddOccurrencesNumber(int[] arr) {
@@ -19,13 +21,14 @@ public class AnumberOfOddOccurrences {
 	//在一个数组中，只有两个数字出现奇数次，其余都出现偶数次，找到他们！
 	public static void findTwoOddOccurrencesNumber(int[] arr) {
 
-		int res = 0; //所有数亦或之后的结果即两个结果的亦或
-
+		int res = 0;
+		//所有数亦或之后的结果即两个结果的亦或
 		for (int i = 0; i < arr.length; i++) {
 			res ^= arr[i];
 		}
 
-		int tmp = res & (-res);//找到最后面一位的“1”
+		int tmp = res & (-res);
+		//找到最后面一位的“1”
 
 		int res1 = 0;
 		//把整组数分成了两类

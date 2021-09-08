@@ -17,9 +17,7 @@ public class KM {
 				t[i] += (num >> i) & 1;
 			}
 		}
-//		for (int i = 31; i >= 0; i--) {
-//			System.out.print(t[i]);
-//		}
+
 		int ans = 0;
 		for (int i = 0; i < 31; i++) {
 			if (t[i] % m != 0) {
@@ -53,7 +51,6 @@ public class KM {
 	public static void main(String[] args) {
 		int[] arr = {16, 16, 16, 9, 9, 9, 9, 1, 1, 1, 1, 5, 5, 5, 5, 23, 23, 23, 23};
 		for (int j : arr) {
-//			System.out.println(Integer.toBinaryString(j));
 		}
 		System.out.println(onlyKTimes(arr, 3, 4));
 		System.out.println(onlyKTimesUsingHashMap(arr, 3, 4));

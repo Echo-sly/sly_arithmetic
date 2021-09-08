@@ -50,6 +50,7 @@ public class MergeSort {
 		}
 	}
 
+
 	public static void mergeSort2(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;

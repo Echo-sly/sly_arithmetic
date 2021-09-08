@@ -1,5 +1,9 @@
 package Part1_BitOperation;
-
+/**
+ * Author:sunlianyu
+ * 2021/7/14 19:49
+ * 在一个数组中，只有一种树出现了 K次，其他数都出现了M次
+ */
 public class Practice_Perum {
 	public void pringArray(int [] arr,int n){
 		// 打印数组

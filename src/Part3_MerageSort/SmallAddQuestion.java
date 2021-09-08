@@ -11,5 +11,6 @@ package Part3_MerageSort;
  * O(n*logn)
  */
 public class SmallAddQuestion {
-
+	public static void main(String[] args) {
+	}
 }
