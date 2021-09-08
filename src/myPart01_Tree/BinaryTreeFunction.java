@@ -53,9 +53,9 @@ public class BinaryTreeFunction {
         if (node == null) {
             return;
         }
-        preOrderTraveral(node.leftChild);
+        inOrderTraveral(node.leftChild);
         System.out.print(node.data + " ");
-        preOrderTraveral(node.rightChild);
+        inOrderTraveral(node.rightChild);
     }
 
     /**
@@ -67,8 +67,8 @@ public class BinaryTreeFunction {
             return;
         }
 
-        preOrderTraveral(node.leftChild);
-        preOrderTraveral(node.rightChild);
+        postOrderTraveral(node.leftChild);
+        postOrderTraveral(node.rightChild);
         System.out.print(node.data + " ");
     }
 
