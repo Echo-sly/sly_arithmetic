@@ -50,5 +50,8 @@ public class TreeTest {
         System.out.println();
         BinaryTreeFunction.postOrderTraveral(myNode);
 
+        System.out.println();
+        BinaryTreeFunction.levelOrderTraveral(myNode);
+
     }
 }

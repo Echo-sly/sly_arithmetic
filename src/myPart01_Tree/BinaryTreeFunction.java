@@ -1,6 +1,7 @@
 package myPart01_Tree;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Demo BinaryTreeFunction
@@ -71,5 +72,25 @@ public class BinaryTreeFunction {
         postOrderTraveral(node.rightChild);
         System.out.print(node.data + " ");
     }
+    public static void levelOrderTraveral(TreeNode Node) {
+        if (Node == null) {
+            return;
+        }
+        TreeNode binaryNode;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(Node);
 
+        while (queue.size() != 0) {
+            binaryNode = queue.poll();
+
+            System.out.print(binaryNode.data + "  ");
+
+            if (binaryNode.leftChild != null) {
+                queue.offer(binaryNode.leftChild);
+            }
+            if (binaryNode.rightChild != null) {
+                queue.offer(binaryNode.rightChild);
+            }
+        }
+    }
 }
