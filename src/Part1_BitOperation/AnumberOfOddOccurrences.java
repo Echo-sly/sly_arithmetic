@@ -33,8 +33,9 @@ public class AnumberOfOddOccurrences {
 		int res1 = 0;
 		//把整组数分成了两类
 		for (int i = 0; i < arr.length; i++) {
-			if ((tmp & arr[i]) == 0)
+			if ((tmp & arr[i]) == 0) {
 				res1 ^= arr[i];
+			}
 		}
 
 		System.out.println(res1);
