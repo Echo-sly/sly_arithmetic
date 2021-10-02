@@ -48,7 +48,6 @@ public class BinaryTreeFunction {
 
     /**
      * 中序遍历二叉树
-     *
      */
     public static void inOrderTraveral(TreeNode node) {
         if (node == null) {
@@ -61,7 +60,6 @@ public class BinaryTreeFunction {
 
     /**
      * 后序遍历二叉树
-     *
      */
     public static void postOrderTraveral(TreeNode node) {
         if (node == null) {
@@ -72,6 +70,7 @@ public class BinaryTreeFunction {
         postOrderTraveral(node.rightChild);
         System.out.print(node.data + " ");
     }
+
     public static void levelOrderTraveral(TreeNode Node) {
         if (Node == null) {
             return;

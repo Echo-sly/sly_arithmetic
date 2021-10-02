@@ -1,7 +1,5 @@
 package leetCode;
 
-import java.util.Arrays;
-
 /**
  * Demo demo0740deleteAndEarn
  *
@@ -9,6 +7,10 @@ import java.util.Arrays;
  * @date 9月29日 23:00
  */
 public class demo0740deleteAndEarn {
+    public static void main(String[] args) {
+
+    }
+
     public int deleteAndEarn(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -32,10 +34,6 @@ public class demo0740deleteAndEarn {
             dp[i] = Math.max(dp[i - 1], dp[i - 2] + i * all[i]);
         }
         return dp[max];
-
-    }
-
-    public static void main(String[] args) {
 
     }
 }

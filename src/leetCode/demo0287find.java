@@ -20,5 +20,5 @@ public class demo0287find {
         }
         return slow;
     }
-    }
+}
 
