@@ -2,7 +2,6 @@ package myPart01_Tree;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Demo TreeTest
