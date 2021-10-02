@@ -1,7 +1,5 @@
 package leetCode;
 
-import java.util.Scanner;
-
 /**
  * Demo demo0063uniquePathsWithStone
  *
@@ -19,8 +17,8 @@ public class demo0063uniquePathsWithStone {
             for (int j = 0; j < n; j++) {
                 if (obstacleGrid[i][0] == 1) widthStoneFlag = 0;
                 if (obstacleGrid[0][j] == 1) lengthStoneFlag = 0;
-                if (obstacleGrid[i][j] == 1){
-                    dp[i][j]=0;
+                if (obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0;
                     continue;
                 }
                 if (i == 0 || j == 0) {
@@ -28,9 +26,9 @@ public class demo0063uniquePathsWithStone {
                 } else {
                     if (obstacleGrid[i][j - 1] == 1) {
                         dp[i][j] = dp[i - 1][j];
-                    }else if (obstacleGrid[i - 1][j] == 1) {
+                    } else if (obstacleGrid[i - 1][j] == 1) {
                         dp[i][j] = dp[i][j - 1];
-                    }else {
+                    } else {
                         dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
                     }
                 }
@@ -46,8 +44,8 @@ public class demo0063uniquePathsWithStone {
     }
 
     public static void main(String[] args) {
-            int[][] arr={{0,0,1,0,0,1,0,0},{0,0,0,0,0,1,0,0},{0,0,0,0,0,1,0,0},{1,0,0,0,0,0,0,0},{0,0,0,1,0,1,0,0}};
-            System.out.println(uniquePathsWithObstacles(arr));
+        int[][] arr = {{0, 0, 1, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0}, {1, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 1, 0, 0}};
+        System.out.println(uniquePathsWithObstacles(arr));
 
     }
 }
