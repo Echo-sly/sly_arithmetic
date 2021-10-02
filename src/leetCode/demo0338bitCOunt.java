@@ -17,10 +17,10 @@ public class demo0338bitCOunt {
             temo++;
         }
         int[] arr = new int[temo];
-        int count=0;
+        int count = 0;
         for (int i = 0; i < temo; i++) {
 
-            count += temp%2==1? 1:0;
+            count += temp % 2 == 1 ? 1 : 0;
             temp >>= 1;
         }
         return count;
@@ -34,6 +34,6 @@ public class demo0338bitCOunt {
             int ans = countBits(n);
             System.out.println(ans);
         }
-        }
     }
+}
 
