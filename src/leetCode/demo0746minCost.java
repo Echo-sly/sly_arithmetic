@@ -8,7 +8,7 @@ package leetCode;
  */
 public class demo0746minCost {
     public int minCostClimbingStairs(int[] cost) {
-        int[] dp = new int[cost.length+1];
+        int[] dp = new int[cost.length + 1];
         for (int i = 0; i < cost.length; i++) {
             if (i == 1 || i == 0) dp[i] = cost[i];
             if (i >= 2)
