@@ -24,4 +24,19 @@ public class demo0053MaxSum {
         }
         return sum;
     }
+
+
+    public int maxSubArray1(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        dp[0] = nums[0];
+        for(int i=1;i<n;++i){
+            dp[i] = Math.max(nums[i],dp[i-1]+nums[i]);
+        }
+        int res=Integer.MIN_VALUE;
+        for(int i=0;i<n;++i){
+            res=dp[i]>res?dp[i]:res;
+        }
+        return res;
+    }
 }
