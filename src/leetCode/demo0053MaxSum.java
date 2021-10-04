@@ -7,8 +7,6 @@ package leetCode;
  * @date 9月24日 16:00
  */
 public class demo0053MaxSum {
-
-
     public int maxSubArray(int[] nums) {
         int sum = nums[0];
         int n = nums[0];
