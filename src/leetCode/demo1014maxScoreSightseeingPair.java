@@ -9,11 +9,11 @@ package leetCode;
 public class demo1014maxScoreSightseeingPair {
     public int maxScoreSightseeingPair(int[] values) {
         int n = values.length;
-        int ans =0;
+        int ans = 0;
         int max = values[0];
         for (int i = 1; i < n; i++) {
-            ans = Math.max(ans,max+values[i]-i);
-            max = Math.max(max,values[i]+i);
+            ans = Math.max(ans, max + values[i] - i);
+            max = Math.max(max, values[i] + i);
         }
         return ans;
     }

@@ -2,8 +2,6 @@ package leetCode;
 
 //import com.sun.tools.javac.util.ArrayUtils;
 
-import java.util.Arrays;
-
 /**
  * Demo demo0918maxSubarraySumCircular
  *
@@ -38,7 +36,7 @@ public class demo0918maxSubarraySumCircular {
     }
 
     public static void main(String[] args) {
-        maxSubarraySumCircular(new int[] {-2,-3,-1});
+        maxSubarraySumCircular(new int[]{-2, -3, -1});
     }
 }
 

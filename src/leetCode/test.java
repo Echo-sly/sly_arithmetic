@@ -10,6 +10,6 @@ public class test {
     public static void main(String[] args) {
         Object a = new Object();
         System.out.println(a.hashCode());
-        System.out.println(a.toString());
+        System.out.println(a);
     }
 }
