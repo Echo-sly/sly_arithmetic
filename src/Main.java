@@ -1,4 +1,5 @@
 //import myPart01_Tree.BinaryTreeFunction;
+
 import java.util.Scanner;
 
 /**
@@ -26,13 +27,13 @@ public class Main {
             int right = Integer.MAX_VALUE;
             int res = 0;
             for (int j = 2; j < 21; j++) {
-                if (left == Math.min(Math.abs(fib[j]-i),left)){
-                    res = j-1;
+                if (left == Math.min(Math.abs(fib[j] - i), left)) {
+                    res = j - 1;
                     break;
                 }
-                left = Math.min(Math.abs(fib[j]-i),left);
+                left = Math.min(Math.abs(fib[j] - i), left);
             }
-            System.out.printf("%d %d\n",res,fib[res]);
+            System.out.printf("%d %d\n", res, fib[res]);
 
         }
     }
