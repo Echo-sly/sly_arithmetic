@@ -11,5 +11,6 @@ public class test {
 
         sunlianyu = 1;
         sunlianyu = 2;
+        sunlianyu = 3;
     }
 }
